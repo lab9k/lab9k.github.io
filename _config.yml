@@ -1,0 +1,7 @@
+markdown: kramdown
+highlighter: rouge
+gems:  [jekyll-feed]
+url: https://lab9k.github.io
+title: "Lab9K"
+description:  "Get your latest info on the Lab9K Sessions here."
+author: HansF
