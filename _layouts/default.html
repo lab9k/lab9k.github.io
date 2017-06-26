@@ -86,6 +86,21 @@ img {
 /***************************/
 /* Home
 /***************************/
+.home {
+    background-color: red;
+    width: 50vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
+}
+.home-section {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    position: relative;
+}
 ul.posts {
     list-style-type: none;
     margin-bottom: 1.2em;
@@ -331,12 +346,12 @@ if (window.location.host.substr(-10) == '.github.io' && window.location.protocol
     <div class="banner">
         <div><img class="banner-logo" src="http://i.imgur.com/zmz4bCm.png"></div>
     </div>
-    <div class="site">
-        <a href="{{site.url}}" id="homelinkbanner"><img src="http://i.imgur.com/zmz4bCm.png" alt="header image of laptop with stickers"></a>
 
+    <!--<div class="site">-->
+        <!--<a href="{{site.url}}" id="homelinkbanner"><img src="http://i.imgur.com/zmz4bCm.png" alt="header image of laptop with stickers"></a>-->
         {{ content }}
 
-    </div>
+    <!--</div>-->
 
 
 <script>
