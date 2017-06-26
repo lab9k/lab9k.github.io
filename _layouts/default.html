@@ -20,12 +20,15 @@ body {
     color: #666666;
     font: 14px 'open sans',  arial, clean, sans-serif;
     text-align: center;
-    background-color: #000;
-	background: url(https://i.imgur.com/EW06s0g.jpg) no-repeat center center fixed; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+}
+.banner {
+    background: url(https://i.imgur.com/EW06s0g.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #73011F;
@@ -314,7 +317,7 @@ if (window.location.host.substr(-10) == '.github.io' && window.location.protocol
 		
 		Srsly: get in touch, we *NEED* you.
 	-->
-
+    <div class="banner"></div>
     <div class="site">
         <a href="{{site.url}}" id="homelinkbanner"><img src="http://i.imgur.com/xHQZewi.png" alt="header image of laptop with stickers"></a>
 
