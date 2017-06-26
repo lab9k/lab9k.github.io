@@ -34,6 +34,13 @@ body {
     margin-right: 2vw;
     margin-top: 2vh;
 }
+.banner-logo {
+    width: 20vw;
+    position: relative;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-top: 20vh;
+}
 h1, h2, h3, h4, h5, h6 {
     color: #73011F;
     font-size: 100%;
@@ -321,9 +328,11 @@ if (window.location.host.substr(-10) == '.github.io' && window.location.protocol
 		
 		Srsly: get in touch, we *NEED* you.
 	-->
-    <div class="banner"></div>
+    <div class="banner">
+        <div><img class="banner-logo" src="http://i.imgur.com/zmz4bCm.png"></div>
+    </div>
     <div class="site">
-        <a href="{{site.url}}" id="homelinkbanner"><img src="http://i.imgur.com/xHQZewi.png" alt="header image of laptop with stickers"></a>
+        <a href="{{site.url}}" id="homelinkbanner"><img src="http://i.imgur.com/zmz4bCm.png" alt="header image of laptop with stickers"></a>
 
         {{ content }}
 
