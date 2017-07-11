@@ -20,6 +20,13 @@ title: Lab9K
 				At the moment, we're looking for students to work for us, since studentcontracts are flexible
 				enough to support this model.</p>
 			</div>
+
+			<div class="home-section-content">
+			    <h2>Members</h2>
+				{% for member in site.members %}
+      				<p><a href="{{ member.url }}"><strong>{{ member.title }}</strong></a></p>
+    			{% endfor %}
+			</div>
 		</div>
 	</div>
 	
