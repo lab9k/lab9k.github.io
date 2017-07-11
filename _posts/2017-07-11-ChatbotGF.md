@@ -1,30 +1,28 @@
 ---
 layout: post
-title: Krookie
-description: A beacon app for the Krook Library.
-logo: http://i.imgur.com/8OwnKr4.png
-github: https://github.com/lab9k/Krookie
+title: ChatbotGF
+description: Chatbot for the Gentse feesten 2017
+logo: http://i.imgur.com/T0DQweM.png
+github: https://github.com/lab9k/ChatbotGF
 lab9k: https://github.com/lab9k
 ---
 
 # {{ page.title }}
 
->Krookie is an app that simulates kids to read books.
+>Chatbot for the Gentse feesten 2017
 
 ## Team
 
 |----               |----           |
 |    **Task**       |       **Name**        |
 |:--------------:   |:---------------:  |
-| Developer     |  Thomas Coppein   |
-| Developer     | Adriaan Glibert   |
-| Developer     | Brent De Roeck    |
-| Developer     | Niels Cappelle    |
-| Developer     | Daan Meert        |
+| Developer     |  Ruben Vervust   |
+| Developer     | Jorg Wieme   |
+| Developer     | Jana Wieme    |
 | Mentor        | Hans Fraiponts    |
 
 ## Github
 
 >**Github Project (Open Source)** : <a href="{{ page.github }}">{{ page.github }}</a>
-<br 
+<br />
 >**Github Lab9K**: <a href="{{ page.lab9k }}">{{ page.lab9k }}</a>
