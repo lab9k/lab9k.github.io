@@ -20,7 +20,7 @@ html, body {
 body {
     color: #666666;
     font: 14px 'open sans',  arial, clean, sans-serif;
-    text-align: center;
+    text-align: left;
     background-color: #eaedef;
 }
 .banner {
@@ -395,6 +395,10 @@ ul.posts span {
     font-size: 16px;
 	align: right;
 }
+.content {
+	text-align: left;
+	padding-left: 5vw;
+}
 
 
 
@@ -427,7 +431,7 @@ if (window.location.host.substr(-10) == '.github.io' && window.location.protocol
 <body>
 <div class="banner">
         <div><img class="banner-logo" src="{{ page.logo }}"></div>
-</div>
+</div class="content">
     <!--
 		Looking at my code?
 		My <body> no less?
