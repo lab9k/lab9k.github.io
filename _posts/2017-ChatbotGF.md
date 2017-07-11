@@ -5,9 +5,10 @@ description: Chatbot for the Gentse feesten 2017
 logo: http://i.imgur.com/T0DQweM.png
 github: https://github.com/lab9k/ChatbotGF
 lab9k: https://github.com/lab9k
+progress: in progress
 ---
 
-# {{ page.title }}
+# {{ page.title }} *({{ page.progress }})*
 
 >Chatbot for the Gentse feesten 2017
 

@@ -5,9 +5,10 @@ description: A decentralized currency - using Ethereum - for the employees of Di
 logo: http://i.imgur.com/XVVANO9.png
 github: https://github.com/lab9k/SoupCoin
 lab9k: https://github.com/lab9k
+progress: in progress
 ---
 
-# {{ page.title }}
+# {{ page.title }} *({{ page.progress }})*
 
 >A decentralized currency - using Ethereum - for the employees of Digipolis. Coins never tasted better!
 

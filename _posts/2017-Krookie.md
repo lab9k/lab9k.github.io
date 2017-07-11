@@ -5,9 +5,10 @@ description: A beacon app for the Krook Library.
 logo: http://i.imgur.com/8OwnKr4.png
 github: https://github.com/lab9k/Krookie
 lab9k: https://github.com/lab9k
+progress: in progress
 ---
 
-# {{ page.title }}
+# {{ page.title }} *({{ page.progress }})*
 
 >Krookie is an app that simulates kids to read books.
 
@@ -26,5 +27,5 @@ lab9k: https://github.com/lab9k
 ## Github
 
 >**Github Project (Open Source)** : <a href="{{ page.github }}">{{ page.github }}</a>
-<br 
+<br/> 
 >**Github Lab9K**: <a href="{{ page.lab9k }}">{{ page.lab9k }}</a>
