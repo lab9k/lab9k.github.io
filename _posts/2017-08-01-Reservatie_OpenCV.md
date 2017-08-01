@@ -11,7 +11,7 @@ progress: in progress
 
 # {{ page.title }} *({{ page.progress }})*
 
-> ...
+> Reservation system with face recognition
 
 ## Team
 
