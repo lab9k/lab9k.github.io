@@ -8,7 +8,7 @@ lab9k: https://github.com/lab9k
 progress: in progress
 ---
 
-# {{ page.title }} *({{ page.progress }})*
+# {{ page.title }}
 
 >Chatbot for the Gentse feesten 2017
 
