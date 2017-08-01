@@ -2,7 +2,7 @@
 layout: post
 title: Reservatie OpenCV 
 description: Reservation system with face recognition
-logo: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/1200px-OpenCV_Logo_with_text_svg_version.svg.png
+logo: https://raw.githubusercontent.com/lab9k/lab9k.github.io/master/images/opencv_logo.png
 github: https://github.com/lab9k/reservatie_OpenCV
 lab9k: https://github.com/lab9k
 progress: in progress
