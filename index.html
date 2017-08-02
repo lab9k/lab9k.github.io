@@ -24,7 +24,7 @@ title: Lab9K
 			<div class="home-section-content">
 				<h2>Members</h2>
 				{% for member in site.data.members %}
-				<p><a href="{{ member.url }}"><strong>{{ member.title }}</strong></a></p>
+				<p>{{ member.name }}</p>
 				{% endfor %}
 			</div>
 		</div>
