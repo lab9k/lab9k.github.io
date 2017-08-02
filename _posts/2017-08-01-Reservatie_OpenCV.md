@@ -5,7 +5,7 @@ description: Reservation system with face recognition
 logo: https://raw.githubusercontent.com/lab9k/lab9k.github.io/master/images/opencv_logo.png
 github: https://github.com/lab9k/reservatie_OpenCV
 lab9k: https://github.com/lab9k
-progress: in progress
+progress: in progress 
 ---
 
 
