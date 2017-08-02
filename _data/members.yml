@@ -1,3 +1,11 @@
+- name: Hans Fraiponts
+  github: HansF
+  url: https://github.com/HansF
+
+- name: Pieter-Jan Philips
+  github: Dhrpieterjan
+  url: https://github.com/Dhrpieterjan
+
 - name: Jorg Wieme
   github: JorgWieme
   url: https://github.com/JorgWieme
@@ -6,3 +14,36 @@
   github: Jefwillems
   url: https://github.com/Jefwillems
 
+- name: Adriaan Glibert
+  github: Adriglib
+  url: https://github.com/Adriglib
+    
+- name: Ruben Vervust
+  github: rubenvervust
+  url: https://github.com/rubenvervust
+  
+- name: Brent De Roeck
+  github: Brendero
+  url: https://github.com/Brendero
+
+- name: Daan Meert
+  github: Daanmeer
+  url: https://github.com/Daanmeer
+  
+- name: Niels Cappelle
+  github: Nielcapp1
+  url: https://github.com/Nielcapp1 
+  
+- name: Wim De Troyer
+  github: wimdetr
+  url: https://github.com/wimdetr
+  
+- name: Jana Wieme
+  github: jawieme
+  url: https://github.com/jawieme
+  
+ 
+  
+- name: Thomas Coppein
+  github: thomcopp
+  url: https://github.com/thomcopp
