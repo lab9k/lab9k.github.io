@@ -69,9 +69,11 @@ title: Lab9K
 					of the City of Ghent.</p>
 
 				<h2>People</h2>
+				<ul>
 				{% for member in site.data.members %}
-				<p><a href="{{ member.url }}">{{ member.name }}</a></p>
+				<li><a href="{{ member.url }}">{{ member.name }}</a></li>
 				{% endfor %}
+				</ul>
 			</div>
 		</div>
 	</div>
