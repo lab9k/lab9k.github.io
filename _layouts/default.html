@@ -560,8 +560,6 @@
         canvas.width = W;
         canvas.height = H;
 	    
-	document.addEventListener("mousemove", mouseMoveHandler, false);
-	    
         var drawing = {
             generalVelocity: 0.3,
             minRadiusDot: 1,
@@ -582,13 +580,6 @@
                     window.setTimeout(callback, 1000 / 60);
                 };
         })();
-
-	function mouseMoveHandler(e) {
-	    let x = e.clientX - canvas.offsetLeft;
-	    let y = e.clientY - canvas.offsetTop;
-	    console.log(e.clientX, e.clientY, canvas.width, canvas.height)
-	    
-	}
         function random(min, max) {
             if (min > max) {
                 min = [max, max = min][0];
