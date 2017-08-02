@@ -38,9 +38,12 @@ title: Lab9K
 		<div class="home-section-part">
 			<div class="home-section-content">
 				<h2>Projects</h2>
-				{% for post in site.posts %}
-				<p><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>: {{ post.description }}</p>
-				{% endfor %}
+				<dl>
+					{% for post in site.posts %}
+					<dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
+					<dd>{{ post.description }}</dd>
+					{% endfor %}
+				</dl>
 			</div>
 		</div>
 		
@@ -69,9 +72,11 @@ title: Lab9K
 					of the City of Ghent.</p>
 
 				<h2>People</h2>
+				<ul>
 				{% for member in site.data.members %}
-				<p><a href="{{ member.url }}">{{ member.name }}</a></p>
+				<li><a href="{{ member.url }}">{{ member.name }}</a></li>
 				{% endfor %}
+				</ul>
 			</div>
 		</div>
 	</div>
