@@ -68,19 +68,18 @@ title: Lab9K
 	<div class="home-section">
 		<div class="home-section-part">
 			<div class="home-section-content">
-				<h2>Members</h2>
-				{% for member in site.data.members %}
-				<p><a href="{{ member.url }}">{{ member.name }}</a></p>
-				{% endfor %}
-			</div>
-		</div>
-
-		<div class="home-section-part">
-			<div class="home-section-content">
 				<h2>Contact</h2>
 				<ul class="posts">
 					<li>Use the <a href="/contact">contact form</a><strong class="mobileShowLine"> or send something to <a href="mailto:&#104;&#97;&#110;&#115;&#46;&#102;&#114;&#97;&#105;&#112;&#111;&#110;&#116;&#115;&#64;&#100;&#105;&#103;&#105;&#112;&#111;&#108;&#105;&#115;&#46;&#103;&#101;&#110;&#116;">my mailbox</a></strong>.</li>
 				</ul>
+			</div>
+		</div>
+		<div class="home-section-part">
+			<div class="home-section-content">
+				<h2>Members</h2>
+				{% for member in site.data.members %}
+				<p><a href="{{ member.url }}">{{ member.name }}</a></p>
+				{% endfor %}
 			</div>
 		</div>
 	</div>
