@@ -568,8 +568,13 @@
             noOfDots:60,
             lineWidth: 1
         };
-
-
+	var logo = {
+	    width: (W / 100) * 20,
+	    height: ((W / 100) * 20) * 0.61120543293718,
+	    y: (H / 100) * 30,
+	    x: (W / 2) - ((W / 100) * 10)
+	};
+	console.log(logo.width, logo.height, logo.y, logo.x);
         window.requestAnimFrame = (function () {
             return window.requestAnimationFrame ||
                 window.webkitRequestAnimationFrame ||
