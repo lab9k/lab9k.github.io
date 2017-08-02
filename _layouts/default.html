@@ -583,13 +583,13 @@
                 };
         })();
 
-	function mouseMoveHandler(e) {
-	    let x = e.clientX - canvas.offsetLeft;
-	    let y = e.clientY - canvas.offsetTop;
-	    if (x <= W && y <= H){
-	    	console.log(x, y)
-	    }
-	}
+        function mouseMoveHandler(e) {
+            let x = e.clientX - canvas.offsetLeft;
+            let y = e.clientY - canvas.offsetTop;
+            if (x <= W && y <= H){
+                console.log(x, y)
+            }
+        }
         function random(min, max) {
             if (min > max) {
                 min = [max, max = min][0];
