@@ -568,7 +568,7 @@
             noOfDots:60,
             lineWidth: 1
         };
-	let logo = document.getElementsByClassName("banner-logo")[0];
+	
         window.requestAnimFrame = (function () {
             return window.requestAnimationFrame ||
                 window.webkitRequestAnimationFrame ||
@@ -636,7 +636,7 @@
                     if (this.y > H) this.vy *= -1.0; //this.y-=H
                     if (this.x < 0) this.vx *= -1.0; //this.x+=W
                     if (this.y < 0) this.vy *= -1.0; //this.y+=H	
-		    if (this.x > logo.x && this.y < logo.y + logo.height && this.y > logo.height) this.vy *= -1.0 // logo left
+		    
                 } else {
                     if (this.x > W) this.x -= W;
                     if (this.y > H) this.y -= H;
@@ -688,7 +688,7 @@
         draw();
 
         window.onresize = function () {
-	    logo = document.getElementsByClassName("banner-logo")[0];
+	 
             W = window.innerWidth;
             H = window.innerHeight;
             canvas.width = W;
