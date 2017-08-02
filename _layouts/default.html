@@ -584,8 +584,9 @@
         })();
 
 	function mouseMoveHandler(e) {
-	    var relativeX = e.clientX - canvas.offsetLeft;
-	    console.log(relativeX)
+	    let x = e.clientX - canvas.offsetLeft;
+	    let y = e.clientY - canvas.offsetTop;
+	    console.log(x, y)
 	}
         function random(min, max) {
             if (min > max) {
