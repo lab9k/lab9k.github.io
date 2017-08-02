@@ -652,24 +652,6 @@
             }
         }
 
-        function updateRadiiOfDots() {
-            for (var i = 0; i < dots.length; i++) {
-                dots[i].r = random(drawing.minRadiusDot, drawing.maxRadiusDot);
-            }
-        }
-
-        function updateNoOfDots() {
-            if (dots.length > drawing.noOfDots) {
-                while (dots.length != drawing.noOfDots) {
-                    dots.pop();
-                }
-            } else {
-                while (dots.length != drawing.noOfDots) {
-                    dots.push(new Dot());
-                }
-            }
-        }
-
         function draw() {
             drawBackground();
 
@@ -689,15 +671,6 @@
         var dots = [];
         createDots();
         draw();
-
-        var gui = new dat.GUI();
-        gui.add(drawing, "noOfDots").min(1).max(200).step(5).onChange(updateNoOfDots);
-        gui.add(drawing, "generalVelocity").min(0).max(10);
-        gui.add(drawing, "minRadiusDot").min(0).max(10).step(1).onChange(updateRadiiOfDots);
-        gui.add(drawing, "maxRadiusDot").min(0).max(10).step(1).onChange(updateRadiiOfDots);
-        gui.add(drawing, "connectDistance").min(0).max(1000).step(10);
-        gui.add(drawing, "lineWidth").min(0).max(10);
-        gui.add(drawing, "bounce");
 
         window.onresize = function () {
             W = window.innerWidth;
