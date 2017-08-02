@@ -527,7 +527,7 @@
     <div class="banner">
         <!--<div><img class="banner-logo" src="http://i.imgur.com/eDGCAfO.png"></div>-->
         <canvas id="c"></canvas>
-        <img class="banner-logo" src="https://i.imgur.com/eDGCAfO.png">
+        <img class="banner-logo" src="https://i.imgur.com/eDGCAfO.png" onclick="miniGame()">
     </div>
 
     <!--<div class="site">-->
@@ -578,15 +578,13 @@
                     window.setTimeout(callback, 1000 / 60);
                 };
         })();
-
-        function mouseMoveHandler(e) {
-            let x = e.clientX - canvas.offsetLeft;
-            let y = e.clientY - canvas.offsetTop;
-            if (x <= W && y <= H){
-                console.log(x, y)
-            }
-        }
-
+	    
+	function miniGame() {
+    		setTimeout(function () { alert("Ready"); }, 1000)
+		setTimeout(function () { alert("Set"); }, 1000)
+		setTimeout(function () { alert("Go"); }, 500)
+	}    
+	    
         function random(min, max) {
             if (min > max) {
                 min = [max, max = min][0];
