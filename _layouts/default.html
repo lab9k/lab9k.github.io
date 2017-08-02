@@ -632,9 +632,10 @@
             this.update = function () {
                 this.x += this.vx * drawing.generalVelocity;
                 this.y += this.vy * drawing.generalVelocity;
-		var x = event.clientX;     // Get the horizontal coordinate
-		var y = event.clientY;     // Get the vertical coordinate
-		var coor = "X coords: " + x + ", Y coords: " + y;
+		var e = window.event;
+	        var x = e.clientX;
+	        var y = e.clientY;
+		console.log("X coords: " + x + ", Y coords: " + y);
                 if (drawing.bounce) {
                     if (this.x > W) this.vx *= -1.0; //this.x-=W
                     if (this.y > H) this.vy *= -1.0; //this.y-=H
