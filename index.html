@@ -23,7 +23,7 @@ title: Lab9K
 		<div class="home-section-part">
 			<div class="home-section-content">
 				<h2>Members</h2>
-				{% for member in site.members %}
+				{% for member in site.data.members %}
 				<p><a href="{{ member.url }}"><strong>{{ member.title }}</strong></a></p>
 				{% endfor %}
 			</div>
