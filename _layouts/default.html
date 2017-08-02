@@ -580,15 +580,11 @@
                     window.setTimeout(callback, 1000 / 60);
                 };
         })();
-
-        function mouseMoveHandler(e) {
-            let x = e.clientX - canvas.offsetLeft;
-            let y = e.clientY - canvas.offsetTop;
-            if (x <= W && y <= H){
-                console.log(x, y)
-            }
-        }
-
+	    
+	document.getElementByClassName("banner-logo").onclick = function() {
+    alert("ok")
+}    
+	    
         function random(min, max) {
             if (min > max) {
                 min = [max, max = min][0];
