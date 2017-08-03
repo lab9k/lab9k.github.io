@@ -73,8 +73,9 @@ title: Lab9K
 				<h2>People</h2>
 				 <div class="memberwrapper">
 				{% for member in site.data.members %}
-					 <a href="{{ member.url }}" class="{{ member.class }}" style=">
-												      <img class="member" src="{{ member.logo }}" title="{{ member.name }}></a>
+					 <a href="{{ member.url }}" class="{{ member.class }}" >
+					      <img class="member" src="{{ member.logo }}" title="{{ member.name }}>
+					 </a>
 			
 				{% endfor %}
 				</div>
