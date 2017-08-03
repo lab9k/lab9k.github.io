@@ -555,6 +555,16 @@
         ga('create', 'UA-86297842-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <script type="text/javascript">
+	    var feed = new Instafeed({
+		get: 'tagged',
+		tagName: 'WHPtalentshow',
+		clientId: '0b3d436d305a4b77b0f620ac2e887ed7',
+		template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
+	    });
+	    feed.run();
+    </script>
+	
     <script>
         var canvas = document.getElementById("c");
         var ctx = canvas.getContext("2d");
