@@ -80,21 +80,11 @@
 	     margin-bottom: 0.75em;
 	}
 	    
-	.member-list li{
-	     margin-bottom: 0.30em;
-	}
-	 
-	.member-list{
-	     margin-left: 1.25em;	
-	}
 	    
 	.member{
-	     text-decoration: none;
+	     height: 30px;
+	     width: 30px;
 	}
-	        
-        a.member:hover {
-            color: #eaedef;
-        }
 	
         a:visited {
             color: white;
