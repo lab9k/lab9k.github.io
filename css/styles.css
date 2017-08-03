@@ -322,6 +322,11 @@
              justify-content: center;
              align-content: center;
          }
+
+         .memberwrapper div a {
+             display: inline-block;
+             
+         }
          /***************************/
          /* mobile
 /***************************/
