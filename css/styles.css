@@ -314,6 +314,7 @@
              display: grid;
              grid-template-columns: auto auto auto auto;
              grid-gap: 4px;
+             text-align: center;
          }
 
          .memberwrapper div {
