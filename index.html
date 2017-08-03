@@ -1,4 +1,7 @@
---- layout: default title: Lab9K ---
+---
+layout: default 
+title: Lab9K 
+---
 
 <div id="home" class="home">
 	<div class="home-section">
@@ -70,11 +73,11 @@
 				<h2>People</h2>
 				<div class="memberwrapper">
 					{% for member in site.data.members %}
-					<div>
-						<a href="{{ member.url }}">
-					      <img src="{{ member.logo }}" title="{{ member.name }}">
-					 </a>
-					</div>
+						<div>
+							<a href="{{ member.url }}">
+							<img src="{{ member.logo }}" title="{{ member.name }}">
+						</a>
+						</div>
 					{% endfor %}
 				</div>
 			</div>
