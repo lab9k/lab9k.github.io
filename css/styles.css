@@ -315,6 +315,13 @@
              grid-template-columns: auto auto auto auto;
              grid-gap: 4px;
          }
+
+         .memberwrapper a {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-content: center;
+         }
          /***************************/
          /* mobile
 /***************************/
