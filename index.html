@@ -71,11 +71,11 @@ title: Lab9K
 					of the City of Ghent.</p>
 
 				<h2>People</h2>
-				<ul class="member-list">
+				 <div class="memberwrapper">
 				{% for member in site.data.members %}
-				<li><a class="member" href="{{ member.url }}">{{ member.name }}</a></li>
+					 <a href="{{ member.url }}" class="{{ member.class }}"><img class="member" src="{{ member.logo }}"></a>
 				{% endfor %}
-				</ul>
+				</div>
 			</div>
 		</div>
 		<div class="home-section-part">
