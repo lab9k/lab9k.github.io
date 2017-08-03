@@ -533,7 +533,7 @@
     <!--<div class="site">-->
     <!--<a href="{{site.url}}" id="homelinkbanner"><img src="http://i.imgur.com/zmz4bCm.png" alt="header image of laptop with stickers"></a>-->
     {{ content }}
-
+	
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -609,7 +609,6 @@
             var grad = ctx.createLinearGradient(dotA.x, dotA.y, dotB.x, dotB.y);
             grad.addColorStop(0, dotA.color);
             grad.addColorStop(1, dotB.color);
-
             ctx.strokeStyle = grad;
             ctx.lineWidth = drawing.lineWidth;
             ctx.lineCap = "round";
@@ -636,7 +635,6 @@
                     if (this.y > H) this.vy *= -1.0; //this.y-=H
                     if (this.x < 0) this.vx *= -1.0; //this.x+=W
                     if (this.y < 0) this.vy *= -1.0; //this.y+=H	
-		    
                 } else {
                     if (this.x > W) this.x -= W;
                     if (this.y > H) this.y -= H;
