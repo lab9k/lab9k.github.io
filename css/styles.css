@@ -316,7 +316,7 @@
              grid-gap: 4px;
          }
 
-         .memberwrapper a {
+         .memberwrapper div {
              display: flex;
              flex-direction: column;
              justify-content: center;
