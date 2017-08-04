@@ -18,8 +18,8 @@
 
  function setAmountOfDots() {
      var surface = W * H;
-     var divisor = 50000;
-     drawing.noOfDots = surface / divisor;
+     var divisor = 40 * 1000;
+     drawing.noOfDots = Math.round(surface / divisor);
      createDots();
  }
 
