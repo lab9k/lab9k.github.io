@@ -10,3 +10,4 @@ _site/
 .vimrc
 local_config.yml
 assets/docs/inleiding2.html
+Gemfile.lock
