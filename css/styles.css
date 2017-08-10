@@ -315,11 +315,8 @@
              display: grid;
              grid-template-columns: auto auto auto auto;
              grid-gap: 0px;
-             text-align: center;
+             text-align: center; 
 			 
-			 img{
-				 padding-bottom: 4px;
-			 }
          }
 
          .memberwrapper div {
@@ -336,8 +333,7 @@
 		 
 		 #instafeed img{
 			 
-			 padding-right: 5px;
-			 width: 100%;
+			 padding-right: 1px;
 			 
 		 }
          /***************************/
