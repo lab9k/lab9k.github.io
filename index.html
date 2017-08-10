@@ -94,7 +94,8 @@ title: Lab9K
     var feed = new Instafeed({
 		get:'user',
 		userId:'5666690431',
-		accessToken:'5666690431.1677ed0.d07923b1732a4468a7137f2a2cb80570'
+		accessToken:'5666690431.1677ed0.d07923b1732a4468a7137f2a2cb80570',
+		template: '<a href="{{link}}"><img src="{{image}}" /></a>'
     });
     feed.run();
 </script>
