@@ -328,13 +328,13 @@
 
          .memberwrapper div a {
              display: inline-block;
-			 width: 20%;
+			 width: 100%;
              
          }
 		 
-		 #instafeed img{
+		 #instafeed a{
 			 
-			 padding-right: 1px;
+			 width: 100%
 			 
 		 }
          /***************************/
