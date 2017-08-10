@@ -314,7 +314,7 @@
          .memberwrapper {
              display: grid;
              grid-template-columns: auto auto auto auto;
-             grid-gap: 4px;
+             grid-gap: 0px;
              text-align: center;
 			 
 			 img{
@@ -337,7 +337,7 @@
 		 #instafeed img{
 			 
 			 padding-right: 5px;
-			 width: 45%;
+			 width: 100%;
 			 
 		 }
          /***************************/
