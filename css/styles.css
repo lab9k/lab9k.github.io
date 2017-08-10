@@ -324,6 +324,7 @@
              flex-direction: column;
              justify-content: center;
              align-content: center;
+			 width: 20%;
          }
 
          .memberwrapper div a {
