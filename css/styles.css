@@ -344,7 +344,10 @@
              grid-gap: 5px 0px;
 		 }
 		 #instafeed a{			
-			 display: inline-block;		 
+			 display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-content: center;	 
 			 width: 100%
 			 margin: 0px;
 			 padding: 0px;			 
