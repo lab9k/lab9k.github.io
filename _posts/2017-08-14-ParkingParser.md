@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Reservatie OpenCV 
-description: Reservation system with face recognition
-logo: https://raw.githubusercontent.com/lab9k/lab9k.github.io/master/images/opencv_logo.png
-github: https://github.com/lab9k/reservatie_OpenCV
+title: ParkingParser
+description: Automated flow to fetch and parse Digipolis parking data from mail
+logo: https://cdn2.iconfinder.com/data/icons/construction-glyphs-2/128/85-512.png
+github: https://github.com/lab9k/Pdf_Parser
 lab9k: https://github.com/lab9k
 progress: finished 
 ---
@@ -11,17 +11,16 @@ progress: finished
 
 # {{ page.title }} *({{ page.progress }})*
 
-> Reservation system with face recognition
+> Console app to parse PDF documents containing parkingdata and Web API to automate fetching and parsing of data to Azure Blob storage
 
 ## Team
 
 |----            |----                |
 |    **Task**    |       **Name**     |
 |:--------------:|:------------------:|
-| Developer      | Jef Willems        |
-| Developer      | Jana Wieme         |
-| Developer      | Jorg Wieme         |
+| Developer      | Ruben Vervust        |
 | Mentor         | Frederik Waeyaert  |
+| Mentor         | Hans Fraiponts  |
 
 ## Github
 
