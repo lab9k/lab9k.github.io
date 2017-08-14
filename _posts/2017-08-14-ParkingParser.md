@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ParkingParser
-description: Automated flow to fetch and parse Digipolis parking data from mail
+description: Automated flow to fetch and parse Digipolis parking data from mail.
 logo: https://cdn2.iconfinder.com/data/icons/construction-glyphs-2/128/85-512.png
 github: https://github.com/lab9k/Pdf_Parser
 lab9k: https://github.com/lab9k
