@@ -12,12 +12,12 @@
          html,
          body {
              height: 100%;
-             max-width: 100%;
+             overflow-x: hidden;
          }
 
          body {
              color: #666666;
-             font: 14px 'Ubuntu', Arial, Helvetica, sans-serif;
+             font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
              text-align: center;
              background-color: #eaedef;
              line-height: 1.5em;
@@ -69,7 +69,6 @@
          }
 
          .project-name {
-             font-size: 16px;
              font-weight: bold;
          }
 
@@ -131,6 +130,7 @@
             background-color: #fff;
             margin-top: 10px;
             margin-bottom: 10px;
+            border-bottom: 5px solid #4b93b8;
          }
          
          .home-section-part:hover {            
@@ -373,8 +373,15 @@
         /*******************
         ****   MOBILE   ****
         *******************/
-
-        @media screen and (max-width: 960px) {
+        @media screen and (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            .project-name {
+                font-size: 16px;
+            }
+        }
+        @media screen and (max-width: 960px) {            
             .banner-logo {
                 width: 80%;
             }
@@ -403,6 +410,11 @@
                 width: 80%;
                 height: 80%;
                 margin: auto;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            .project-name {
+                font-size: 18px;
             }
         }
 
