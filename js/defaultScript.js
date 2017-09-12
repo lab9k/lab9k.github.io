@@ -80,8 +80,7 @@
      this.vy = random(-3, 3);
      this.x = random(0, W);
      this.y = random(0, H);
-     this.color = "rgb(" + [round(random(100, 230)), round(random(100, 230)), round(random(100, 230))].join() +
-         ")";
+     this.color = "rgba(1,100,149,.35)";
 
      this.update = function () {
          this.x += this.vx * drawing.generalVelocity;
