@@ -108,7 +108,7 @@ title: Lab9K
         for (let obj of result) {
             $(".memberwrapper").append("<div><a href=\"{$}\" target=\"_blank\>" + 
 				       "<img src=\"{$}\" title=\"{$}\">" + 
-				       "</a></div>").format(obj["html_url"], obj["avatar_url"], obj["login"].capitalize())
+				       "</a></div>".format(obj["html_url"], obj["avatar_url"], obj["login"].capitalize()))
         }
 
     });
