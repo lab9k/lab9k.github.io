@@ -27,30 +27,29 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{{ page.title }}</title>
     <meta name="author" content="HansF" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/manifest.json">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <meta name=viewport content="width=device-width, initial-scale=1"> {% feed_meta %}
 
+    <!-- STYLESHEETS -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 
 <body>
-    <!--
-		Looking at my code?
-		My <body> no less?
-		Please do!
-		I'm a dirty little website.
-		
-		Srsly: get in touch, we *NEED* you.
-	-->
     <div class="banner">
         <canvas id="c"></canvas>
         <img class="banner-logo" src="images/logo.svg">
-
     </div>
 
-    <!--<div class="site">-->
-    <!--<a href="{{site.url}}" id="homelinkbanner"><img src="http://i.imgur.com/zmz4bCm.png" alt="header image of laptop with stickers"></a>-->
     {{ content }}
 	
     <script>
