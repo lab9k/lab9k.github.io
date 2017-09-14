@@ -336,7 +336,8 @@
              flex-direction: column;
          }
 
-         .memberwrapper {
+         .memberwrapper,
+         .partnerswrapper {
              display: grid;
              grid-template-columns: auto auto auto auto;
              grid-gap: 5px 0px;
@@ -344,7 +345,8 @@
 			 
          }
 
-         .memberwrapper div {
+         .memberwrapper div,
+         .partnerswrapper div {
              display: flex;
              flex-direction: column;
              justify-content: center;
@@ -362,6 +364,11 @@
              display: inline-block;
 			 width: 100%;
              
+         }
+         .partnerswrapper div img {
+            display: inline-block;
+            width: 100%;
+            margin: 0 5px;
          }
 		 
 		 #instafeed img{

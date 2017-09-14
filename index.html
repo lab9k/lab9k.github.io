@@ -49,7 +49,7 @@ title: Lab9K
 	<div class="home-section side">
 		<div class="home-section-part">
 			<div class="home-section-content">
-				<i class="ion-android-person"></i>
+				<i class="ion-person"></i>
 				<h2>Who?</h2>
 				<p>Lab9K is an initiative of <a href="https://digipolis.be" target="_blank">Digipolis</a>. We manage, buy or build all IT-projects of the
 					City of Ghent.</p>
@@ -59,8 +59,8 @@ title: Lab9K
 					{% for member in site.data.members %}
 						<div>
 							<a href="{{ member.url }}" target="_blank">
-							<img src="{{ member.logo }}" title="{{ member.name }}">
-						</a>
+								<img src="{{ member.logo }}" title="{{ member.name }}">
+							</a>
 						</div>
 					{% endfor %}
 				</div>
@@ -95,6 +95,22 @@ title: Lab9K
 				<ul class="posts">
 					<li>Use the <a href="/contact">contact form</a><strong class="mobileShowLine"> or send something to <a href="mailto:&#104;&#97;&#110;&#115;&#46;&#102;&#114;&#97;&#105;&#112;&#111;&#110;&#116;&#115;&#64;&#100;&#105;&#103;&#105;&#112;&#111;&#108;&#105;&#115;&#46;&#103;&#101;&#110;&#116;">my mailbox</a></strong>.</li>
 				</ul>
+			</div>
+		</div>
+		<div class="home-section-part">
+			<div class="home-section-content">
+				<i class="ion-person-stalker"></i>
+				<h2>Partners</h2>
+				<div class="partnerswrapper">
+					<div>
+						<a href="https://digipolis.be" target="_blank">
+							<img src="images/partners/digipolis.png" title="Digipolis">
+						</a>
+						<a href="https://stad.gent" target="_blank">
+							<img src="images/partners/stadgent.png" title="Stad Gent">
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
