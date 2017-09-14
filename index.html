@@ -56,6 +56,7 @@ title: Lab9K
 
 				<strong>People</strong>
 				<div class="memberwrapper">
+<<<<<<< HEAD
 					{% for member in site.data.members %}
 						<div>
 							<a href="{{ member.url }}" target="_blank">
@@ -63,6 +64,9 @@ title: Lab9K
 							</a>
 						</div>
 					{% endfor %}
+=======
+					
+>>>>>>> cff3499c36bf2fcc8d4ebb2c0899efb85a629e92
 				</div>
 			</div>
 		</div>		
@@ -125,4 +129,25 @@ title: Lab9K
 		accessToken:'5666690431.1677ed0.d07923b1732a4468a7137f2a2cb80570'	
     });
     feed.run();
+	
+    $.getJSON("https://api.github.com/orgs/lab9k/members", function (result) {
+        for (let obj of result) {
+     
+            $(".memberwrapper").append("<div><a href=\"" + obj["html_url"] + " target=\"_blank\">" +
+                "<img src=\"" + obj["avatar_url"] + "\" title=\"" + obj["login"].capitalize() + "\"></a></div>")
+        }
+
+    });
+
+    // custom method added to string
+    String.prototype.capitalize = function () {
+        return this.charAt(0).toUpperCase() + this.slice(1);
+    }
+    String.prototype.format = function (...a) {
+        let temp = this;
+        for (let letter of a) {
+            temp = temp.replace("{$}", letter)
+        }
+        return temp;
+    }
 </script>
