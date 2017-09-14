@@ -106,15 +106,22 @@ title: Lab9K
 	
     $.getJSON("https://api.github.com/orgs/lab9k/members", function (result) {
         for (let obj of result) {
-            $(".memberwrapper").append("<div><a href=\"" + obj["html_url"] + " target=\"_blank\">" +
-                "<img src=\"" + obj["avatar_url"] + "\" title=\"" + obj["login"].capitalize() + "\"></a></div>")
+            $(".memberwrapper").append("<div><a href=\"{$}\" target=\"_blank\>" + 
+				       "<img src=\"{$}\" title=\"{$}\">" + 
+				       "</a></div>").format(obj["html_url"], obj["avatar_url"], obj["login"].capitalize())
         }
 
     });
 
-    // custom methode added to string
+    // custom method added to string
     String.prototype.capitalize = function () {
         return this.charAt(0).toUpperCase() + this.slice(1);
     }
-    // TODO prototype format
+    String.prototype.format = function (...a) {
+        let temp = this;
+        for (let letter of a) {
+            temp = temp.replace("{$}", letter)
+        }
+        return temp;
+    }
 </script>
