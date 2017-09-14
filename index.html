@@ -56,13 +56,7 @@ title: Lab9K
 
 				<strong>People</strong>
 				<div class="memberwrapper">
-					{% for member in site.data.members %}
-						<div>
-							<a href="{{ member.url }}" target="_blank">
-							<img src="{{ member.logo }}" title="{{ member.name }}">
-						</a>
-						</div>
-					{% endfor %}
+					
 				</div>
 			</div>
 		</div>		
@@ -109,4 +103,18 @@ title: Lab9K
 		accessToken:'5666690431.1677ed0.d07923b1732a4468a7137f2a2cb80570'	
     });
     feed.run();
+	
+    $.getJSON("https://api.github.com/orgs/lab9k/members", function (result) {
+        for (let obj of result) {
+            $(".memberwrapper").append("<div><a href=\"" + obj["html_url"] + " target=\"_blank\">" +
+                "<img src=\"" + obj["avatar_url"] + "\" title=\"" + obj["login"].capitalize() + "\"></a></div>")
+        }
+
+    });
+
+    // custom methode added to string
+    String.prototype.capitalize = function () {
+        return this.charAt(0).toUpperCase() + this.slice(1);
+    }
+    // TODO prototype format
 </script>
