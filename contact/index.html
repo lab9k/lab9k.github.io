@@ -1,27 +1,28 @@
 ---
-layout: default
-title: Lab9K 
+layout: detail
+title: Lab9K Contact
 ---
-<a href="{{site.url}}" id="homelink"><img src="https://i.imgur.com/0ZlAz2c.png"></a>
-<div id="contact">
-<div class="contact-content">
-	 <h2>Contact us!</h2>
+<a href="{{site.url}}" id="homelink"><i class="ion-ios-arrow-left"></i></a>
 
-	<form action="https://formspree.io/hans.fraiponts@digipolis.be"
-	      method="POST">
-		<h3 style="color: #17263F">Name:</h3>
-	    <input type="text" name="name">
-		<h3 style="color: #17263F">Mail:</h3>
-	    <input type="email" name="_replyto">
-		
-		<h3 style="color:#17263F">Your Message:</h3>
-	    <textarea name="h" cols="60" rows="10"></textarea>
-	    <input type="submit" value="Send"  class="contactformbutton"/>
-		<input type="hidden" name="_next" value="contact/thanks.html"/>
-		<input type="text" name="_gotcha" style="display:none" />
-		<input type="hidden" name="_subject" value="Contactform Lab9K" />
-	</form>
-</div>
+<div id="contact">
+	<div class="contact-content">
+		<form action="https://formspree.io/hans.fraiponts@digipolis.be" method="POST">
+			<h2>Contact us!</h2>
+			<label>Name</label>
+			<input type="text" name="name">
+
+			<label>E-mail</label>
+			<input type="email" name="_replyto">
+			
+			<label>Your message</label>
+			<textarea name="h" cols="60" rows="10"></textarea>
+
+			<button type="submit" value="Send"  class="contactformbutton">Send</button>
+			<input type="hidden" name="_next" value="contact/thanks.html"/>
+			<input type="text" name="_gotcha" style="display:none" />
+			<input type="hidden" name="_subject" value="Contactform Lab9K" />
+		</form>
+	</div>
 </div>
 
 
