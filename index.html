@@ -26,12 +26,7 @@ title: Lab9K
 				<div class="home-section-content">
 					<i class="ion-document-text"></i>
 					<h2>Projects</h2>
-					<dl>
-						{% for post in site.posts %}
-						<dt class="project-name"><a href="{{ post.url }}">{{ post.title }}</a></dt>
-						<dd class="project-description">{{ post.description }}</dd>
-						{% endfor %}
-					</dl>
+					<dl id="projectlist"></dl>
 				</div>
 			</div>
 
@@ -122,6 +117,14 @@ title: Lab9K
     $.getJSON("https://api.github.com/orgs/lab9k/members", function (result) {
         for (let obj of result) {
             $(".memberwrapper").append("<div><a href=\"{$}\" target=\"_blank\"><img src=\"{$}\" title=\"{$}\"></a></div>".format(obj["html_url"], obj["avatar_url"], obj["login"].capitalize()))
+        }
+    });
+	
+    $.getJSON("https://api.github.com/orgs/lab9k/repos", function (result) {
+        for (let obj of result) {
+            if (obj["homepage"] !== null && obj["homepage"] !== "") {
+                $("#projectlist").append("<dt class=\"project-name\"><a href=\"{$}\">{$}</a></dt><dd class=\"project-description\">{$}</dd>".format(obj["html_url"], obj["name"].capitalize(), obj["description"]))
+            }
         }
     });
 
