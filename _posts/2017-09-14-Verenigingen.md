@@ -2,7 +2,7 @@
 layout: post
 title: Verenigingen
 description: List of recognized association, on the ethereum blockchain.
-logo: #
+logo: /images/projects/verenigingen.svg
 github: https://github.com/lab9k/Verenigingen
 lab9k: https://github.com/lab9k
 progress: Pending

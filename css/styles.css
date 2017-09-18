@@ -10,96 +10,122 @@
 
 /****** Global Reset *******/
 
-         * {
-             margin: 0;
-             padding: 0;
-         }
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-         html,
-         body {
-             height: 100%;
-             overflow-x: hidden;
-         }
+        html,
+        body {
+            height: 100%;
+            overflow-x: hidden;
+        }
 
-         body {
-             color: #666666;
-             font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-             text-align: center;
-             background-color: #eaedef;
-             line-height: 1.5em;
-         }
+        body {
+            color: #666666;
+            font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: #eaedef;
+            line-height: 1.5em;
+        }
 
-         h3 {
-             color: #17263F;
-             font-size: 100%;
-             font-weight: 300;
-         }
+        h3 {
+            color: #17263F;
+            font-size: 100%;
+            font-weight: 300;
+        }
 
-         h1,
-         h2,
-         h4,
-         h5,
-         h6 {
-             color: #4b93b8;
-             font-size: 100%;
-             font-weight: 300;
-         }
+        h1,
+        h2,
+        h4,
+        h5,
+        h6 {
+            color: #4b93b8;
+            font-size: 100%;
+            font-weight: 300;
+        }
 
-         h1 {
-             margin-bottom: .5em;
-             padding-top: 0.25em;
-             padding-bottom: 0.4em;
-             width: 100%;
-             font-size: 200%;
-         }
+        h1 {
+            margin-bottom: .5em;
+            padding-top: 0.25em;
+            padding-bottom: 0.4em;
+            width: 100%;
+            font-size: 200%;
+        }
 
-         h2 {
-             margin-top: .5em;
-             margin-bottom: .3em;
-             width: 100%;
-             font-size: 165%;
-         }
+        h2 {
+            margin-top: .5em;
+            margin-bottom: .3em;
+            width: 100%;
+            font-size: 165%;
+        }
 
-         p {
-             margin: 1em 0;
-             font-weight: 300;
-         }
+        p {
+            margin: 1em 0;
+            font-weight: 300;
+        }
 
-         a {
-             color: #016495;
-             font-weight: 200%;
-         }
+        a {
+            color: #016495;
+            font-weight: 200%;
+        }
 
-         .project-name {
-             font-weight: bold;
-         }
+        .project-name {
+            font-weight: bold;
+        }
 
-         .project-description {
-             margin-left: 1em;
-             margin-bottom: 1em;
-         }
+        .project-description {
+            margin-left: 1em;
+            margin-bottom: 1em;
+        }
 
-         .member {
-             height: 30px;
-             width: 30px;
-         }
+        .member {
+            height: 30px;
+            width: 30px;
+        }
 
-         a:visited {
-             color: #016495;
-         }
+        a:visited {
+            color: #016495;
+        }
 
-         table {
-             font-size: inherit;
-             font: 100%;
-         }
+        table {
+            width: calc(100% - 16px);
+            max-width: 500px;
+            margin: 8px auto;
+            background: white;
+            border-collapse: collapse;
+        }
+        table th {
+            background: #17263F;
+            color: white;
+        }
+        table tr,
+        table th {
+            height: 40px;
+        }
+
+        table tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        table tr td {
+            font-weight: 300;
+        }
+
+        table tr:nth-child(1) td,
+        table tr:nth-child(2) td,
+        table tr:nth-child(3) td,
+        table tr:nth-child(4) td {
+            border-right: 1px solid #eee;
+        }
 
          img {
              max-width: 500px;
              border: none;
          }
-         /***************************/
-         /* Home
-/***************************/
+        /***************************/
+        /* Home
+        /***************************/
 
         .home {
             padding-top: 10vh;
@@ -472,6 +498,9 @@
             .banner-detail .banner-logo {
                 height: 30px;
             }
+            .banner-detail {
+                max-height: 150px;
+            }
         }
         @media screen and (min-width: 960px) {
             .project-name {
@@ -479,6 +508,10 @@
             }
             .banner-detail .banner-logo {
                 height: 50px;
+            }
+            .banner-detail {
+                height: 50vh;
+                max-height: 300px;
             }
         }
 
@@ -491,7 +524,7 @@
         ****   CANVAS   ****
         *******************/
 
-        #c {
+        .banner #c {
             width: 100%;
             height: 100vh;
             position: absolute;
@@ -499,7 +532,14 @@
             top: 0;
             z-index: -1;
         }
-
+        .banner-detail #c {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
         .banner {
             height: 75vh;
             width: 100vw;
