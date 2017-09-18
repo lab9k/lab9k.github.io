@@ -417,6 +417,7 @@ ul.posts span {
     margin-bottom: 8px;
     border: 1px solid #ddd;
     padding: 10px;
+    resize: vertical;
 }
 
 #contact form input {
