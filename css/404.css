@@ -2,12 +2,31 @@
 /* Common
 /***************************/
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #17263F;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
 html, body {
     height: 100%;
     max-width: 100%;
 }
 body {
-    margin: 0;
     color: #666666;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     text-align: center;
@@ -20,7 +39,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 20vh;
+    height: 50vh;
     width: 100vw;
     position: relative;
     -webkit-user-select: none;
@@ -33,18 +52,6 @@ body {
     max-width: 200px;
     margin-top: calc(25vh - 100px);
 }
-.logo {
-    position: absolute;
-    top: 23px;
-    width: 100%;
-}
-.logo img {
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-}
-small { opacity: .65; }
-.highlight { color: #4b93b8; }
 h3 {
     color: #17263F;
     font-size: 100%;
@@ -59,7 +66,6 @@ h1, h2, h4, h5, h6 {
 }
 h1 {
     padding: 0.5em 0;
-    margin: 1.75em 0 0 0;
     width: 100%;
     font-size: 2em;
     font-weight: 400;
@@ -91,18 +97,14 @@ table {
     font-size: inherit;
     font-weight: 300;
 }
-.banner-logo img {
-    max-width: 100px;
-    margin: 0 auto;
+img {
+    max-width: 50%;
+    border: none;
 }
 
 /***************************/
 /* Home
 /***************************/
-.container {
-    max-width: 960px;
-    float: right;
-}
 .home {
     padding-top: 10vh;
     width: 80vw;
@@ -258,11 +260,18 @@ ul.posts span {
 #homelink {
     z-index: 9999;
     position: absolute;
-    top: 16px;
-    left: 16px;
-    font-size: 3em;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    margin-left: 50px;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding: .2em .5em .2em .5em;
+    border-radius: 5px;
     text-decoration: none;
-    color: #016495;
+}
+#homelink img {
+    width: 100px;
 }
 .contact-content {
     width: 20%;
@@ -280,19 +289,6 @@ ul.posts span {
 /* mobile
 /***************************/
 @media screen and (max-width: 450px){
-    .flex {
-        flex-direction: column !important;
-    }
-    .logo {
-        width: 100% !important;
-    }
-    aside {
-        display: none;
-    }
-    .content {
-        max-width: initial;
-    }
-
     textarea {
         width: 80vw;
     }
@@ -309,6 +305,15 @@ ul.posts span {
     .banner-logo {
         width: 50vw;
         margin-top: 15vh;
+    }
+    #homelink {
+        top: 0;
+        margin-top: 30px;
+        left: 0;
+        margin-left: 20px;
+    }
+    #homelink img {
+        width: 50px;
     }
     .banner {
         height: 50vh;
@@ -328,18 +333,8 @@ ul.posts span {
         margin:0;
     }
 }
-@media screen and (max-width: 800px) {
-    .flex {
-        display: flex;
-        flex-direction: row;
-    }
-    .logo {
-        width: calc(100% - 300px);
-    }
-    .content {
-        max-width: calc(960px - 300px);
-    }
 
+@media screen and (max-width: 800px) {
     table { width: 100%; }
     .site {
         max-width: 48em;
@@ -403,13 +398,6 @@ ul.posts span {
         margin: -150px 26vw;
         padding: 5vw;
     }
-    .flex {
-        display: flex;
-        flex-direction: row;
-    }
-    .logo {
-        width: calc(100% - 300px);
-    }
 }
 
 /***************************/
@@ -427,33 +415,13 @@ ul.posts span {
 }
 .content {
     text-align: left;
-    padding: 16px;
-    width: calc(100% - 32px);
-    min-height: calc(100vh - 32px);
-    margin: 0 auto;
+    padding-left: 5vw;
+    padding-bottom: 5vh;
+    width: calc(100% - 10vw);
 }
 .content a {
     color: #17263F;
 }
-
-aside {
-    background-color: #172740;
-    padding: 55px 16px;
-    width: 300px;
-    min-height: calc(100vh - 110px);
-    text-align: left;
-}
-aside h4 { 
-    color: white;
-    font-weight: 600;
-}
-aside ul {
-    color: white;
-    font-size: 14px;
-    font-weight: 300;
-}
-aside ul li a { text-decoration: none; display: block; }
-aside ul li a:hover { text-decoration: underline; }
 
 #error {
     text-align: center;
