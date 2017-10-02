@@ -32,6 +32,20 @@ title: Lab9K
 
 			<div class="home-section-part">
 				<div class="home-section-content">
+					<i class="ion-document-text"></i>
+					<h2>Blog posts</h2>
+					<ul>
+						{% for post in site.posts %}
+						  <li>
+							<a href="{{ post.url }}">{{ post.title }}</a>
+						  </li>
+						{% endfor %}
+					  </ul>
+				</div>
+			</div>
+
+			<div class="home-section-part">
+				<div class="home-section-content">
 					<img class="icon-instagram" src="images/instagram-icon.svg">
 					<h2>Instagram</h2>		
 					<div id="instafeed"></div>
