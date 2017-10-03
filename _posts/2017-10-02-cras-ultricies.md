@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "Cras ultricies"
+title: "Cras ultricies"
 slug: "cras-ultricies"
 author: admin
-date:   2015-11-17 16:16:01 -0600
+date: 2015-11-17 16:16:01 -0600
 categories: blog
+image_path: "/images/posts/"
 ---
 <div class="post">
 <h1>{{ page.title }}</h1>
+<p>{{ page.image_url }}</p>
 <p>
     <small>
         posted in <strong>{{ page.categories }}</strong>
@@ -16,7 +18,7 @@ categories: blog
     </small>
 </p>
 
-<img src="/images/posts/{{ page.slug }}.jpg" class="post-image" alt="{{ page.title }}">
+<img src="{{ page.image_path }}{{ page.slug }}.jpg" class="post-image" alt="{{ page.title }}">
 <p>
     <strong>Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta.</strong>
 </p>

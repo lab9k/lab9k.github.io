@@ -43,8 +43,6 @@ body {
     display: block;
     margin: 0 auto;
 }
-small { opacity: .65; }
-.highlight { color: #4b93b8; }
 h3 {
     color: #17263F;
     font-size: 100%;
@@ -465,3 +463,9 @@ aside ul li a:hover { text-decoration: underline; }
     max-width: 480px;
     filter: contrast(1.1);
 }
+.post small { 
+    opacity: .65;
+    border-left: 2px solid #016495;
+    padding-left: 8px;
+}
+.post .highlight { color: #4b93b8; }
