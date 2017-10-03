@@ -579,3 +579,56 @@ ul.posts span {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+ul.posts li.post {
+    width: calc(33.33% - 16px);
+    margin: 8px;
+    list-style: none;
+    float: left;
+    position: relative;
+    border-bottom: 5px solid #4b93b8;
+}
+ul.posts li.post a {
+    display: block;
+}
+ul.posts li.post .post-image {
+    width: 100%;
+    display: block;
+}
+ul.posts li.post p {
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    z-index: 10;
+}
+ul.posts li.post .black-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(transparent, black 85%);
+    z-index: 9;
+}
+
+ul.posts li.post a.btn-details {
+    position: absolute;
+    top: 16px;
+    padding: 8px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 calc(50% - 50px - 8px);
+    text-align: center;
+    background: white;
+    z-index: -1;
+}
+img.post-image:hover + p + div + a.btn-details,
+img.post-image:focus + p + div + a.btn-details,
+img.post-image:active + p + div + a.btn-details {
+    z-index: 15;
+}
