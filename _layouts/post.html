@@ -7,7 +7,6 @@
         window.location.protocol = 'https:';
     }
     </script>
-        <!-- <meta http-equiv="refresh" content="3"> -->
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>Lab9K | {{ page.title }}</title>
         <meta name="author" content="HansF" />
@@ -30,12 +29,13 @@
     </head>
 
     <body>
-        <a href="{{site.url}}" id="homelink"><i class="ion-ios-arrow-left"></i></a>
+        
 
         <div class="flex">
             <div class="content">
                 <div class="container">
                     <a href="/" class="logo"><img src="/images/logo.svg"></a>
+                    <a href="{{site.url}}" id="homelink"><i class="ion-ios-arrow-left"></i></a>
                     {{ content }}
                 </div>
             </div>
@@ -46,13 +46,15 @@
                     <li><a href="#">Be updated</a></li>
                     <li><a href="#">Soon... :)</a></li>  
                 </ul>
+
                 <hr>
+
                 <h4>Most recent posts</h4>
                 <ul>
-                        <li><a href="#">Will</a></li>
-                        <li><a href="#">Be updated</a></li>
-                        <li><a href="#">Soon... :)</a></li>  
-                    </ul>
+                    <li><a href="#">Will</a></li>
+                    <li><a href="#">Be updated</a></li>
+                    <li><a href="#">Soon... :)</a></li>  
+                </ul>
             </aside>
         </div>
 
