@@ -35,7 +35,7 @@ title: Lab9K
 					<i class="ion-filing"></i>
 					<h2>Blog posts</h2>
 					<ul class="posts">
-						{% for post in site.posts %}
+						{% for post in site.posts limit:3 %}
 						  	<li class="post">
 								<img src="{{ post.image_path }}{{ post.slug }}.jpg" class="post-image" alt="{{ post.title }}">
 								<p>{{ post.title }}</p>

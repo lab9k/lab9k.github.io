@@ -459,12 +459,18 @@ ul.posts span {
 ****   MOBILE   ****
 *******************/
 @media screen and (max-width: 320px) {
+    ul.posts li.post {
+        width: calc(100% - 16px);
+    }
     .banner-logo img {
         width: 80%;
         max-width: 300px;
     }
 }
 @media screen and (max-width: 480px) {
+    ul.posts li.post {
+        width: calc(100% - 16px) !important;
+    }
     .banner-logo img {
         width: 80%;
         max-width: 300px;
@@ -480,6 +486,9 @@ ul.posts span {
     }
 }
 @media screen and (max-width: 960px) {            
+    ul.posts li.post {
+        width: calc(33.33% - 16px);
+    }
     .banner-logo img {
         width: 80%;
     }
@@ -517,6 +526,9 @@ ul.posts span {
     }
 }
 @media screen and (min-width: 960px) {
+    ul.posts li.post {
+        width: calc(33.33% - 16px);
+    }
     .banner-logo img {
         max-width: 500px;
     }
@@ -581,7 +593,6 @@ ul.posts span {
 }
 
 ul.posts li.post {
-    width: calc(33.33% - 16px);
     margin: 8px;
     list-style: none;
     float: left;
