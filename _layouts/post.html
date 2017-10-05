@@ -40,21 +40,15 @@
                 </div>
             </div>
             <aside>
-                <h4>Related posts</h4>
+                <h4>All posts</h4>
                 <ul>
-                    <li><a href="#">Will</a></li>
-                    <li><a href="#">Be updated</a></li>
-                    <li><a href="#">Soon... :)</a></li>  
+                {% for post in site.posts limit:8 %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}       
+                 
                 </ul>
 
                 <hr>
-
-                <h4>Most recent posts</h4>
-                <ul>
-                    <li><a href="#">Will</a></li>
-                    <li><a href="#">Be updated</a></li>
-                    <li><a href="#">Soon... :)</a></li>  
-                </ul>
             </aside>
         </div>
 
