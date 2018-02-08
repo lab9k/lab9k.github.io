@@ -34,9 +34,8 @@ body {
     margin-top: calc(25vh - 100px);
 }
 .logo {
-    position: absolute;
-    top: 23px;
-    width: 100%;
+    display: block;
+    margin-top: 22px;
 }
 .logo img {
     width: 200px;
