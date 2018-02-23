@@ -30,7 +30,6 @@ ready(function(){
 
         }
     }
-
     
 App.init();
 });
