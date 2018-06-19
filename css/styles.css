@@ -643,3 +643,42 @@ img.post-image:focus + p + div + a.btn-details,
 img.post-image:active + p + div + a.btn-details {
     z-index: 15;
 }
+
+/*******************
+****  CHATBOT  ****
+*******************/
+#chatbot {}
+#chatbot > button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: none;
+    background-image: url('./../images/cb.svg');
+    background-color: white;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    padding: 30px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    transition: all 200ms ease;
+}
+#chatbot > button:hover {
+    cursor: pointer;
+    background-size: 80%;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .35);
+}
+#chatbot > button:focus,
+#chatbot > button:active {
+    outline: none;
+}
+#chatbot > iframe {
+    position: absolute;
+    bottom: 120px;
+    right: 10px;
+    z-index: 9999;
+    border: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .20);
+}
