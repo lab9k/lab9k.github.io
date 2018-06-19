@@ -11,9 +11,6 @@ cb.addEventListener('click', () => {
     iframe.style.width = '350px';
     iframe.style.height = '430px';
     cb.appendChild(iframe);
-    var el = iframe/*.contentWindow.document.getElementsByClassName('b-agent-demo_powered_by')[0]*/;
-    // el.style.display = "none";
-    console.log(el);
   } else {
     console.log('not');
     cb.removeChild(document.querySelector('#chatbot > iframe'));
