@@ -7,7 +7,7 @@ cb.addEventListener('click', () => {
   if (cb.classList.contains('open')) {
     console.log('opened');
     var iframe = document.createElement('iframe');
-    iframe.setAttribute('src', 'https://console.dialogflow.com/api-client/demo/embedded/3de07647-f185-4401-ae64-431685265c59');
+    iframe.setAttribute('src', 'https://console.dialogflow.com/api-client/demo/embedded/fcdede07-ff8b-45b3-8b23-37ae0ed4fa02');
     iframe.style.width = '350px';
     iframe.style.height = '430px';
     cb.appendChild(iframe);
