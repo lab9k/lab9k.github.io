@@ -7,7 +7,7 @@ cb.addEventListener('click', () => {
   if (cb.classList.contains('open')) {
     console.log('opened');
     var iframe = document.createElement('iframe');
-    iframe.setAttribute('src', 'https://bot.dialogflow.com/miia');
+    iframe.setAttribute('src', 'https://console.dialogflow.com/api-client/demo/embedded/miia');
     iframe.style.width = '350px';
     iframe.style.height = '430px';
     cb.appendChild(iframe);
