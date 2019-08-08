@@ -138,6 +138,12 @@ title: Lab9K
 		accessToken:'5666690431.1677ed0.d07923b1732a4468a7137f2a2cb80570'	
     });
     feed.run();
+
+    $.getJSON("https://lab9k-github-io-backend.herokuapp.com/members", function (result) {
+        for (let obj of result) {
+			$(".memberwrapper").append(`<div><a href=\"${obj["html_url"]}" target=\"_blank\"><img src=\"${obj["avatar_url"]}\" title=\"${obj["login"]}\"></a></div>`);
+        }
+    });
 	
     $.getJSON("https://api.github.com/orgs/lab9k/repos", function (result) {
         for (let obj of result) {
