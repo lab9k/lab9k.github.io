@@ -145,10 +145,10 @@ title: Lab9K
         }
     });
 	
-    $.getJSON("https://api.github.com/orgs/lab9k/repos", function (result) {
+    $.getJSON("https://lab9k-github-io-backend.herokuapp.com/repos", function (result) {
         for (let obj of result) {
             if (obj["homepage"] !== null && obj["homepage"] !== "") {
-                $("#projectlist").append("<dt class=\"project-name\"><a href=\"{$}\">{$}</a></dt><dd class=\"project-description\">{$}</dd>".format(obj["html_url"], obj["name"].capitalize(), obj["description"]))
+                $("#projectlist").append(`<dt class=\"project-name\"><a href=\"${obj["html_url"]}\">${obj["name"]}</a></dt><dd class=\"project-description\">${obj["description"]}</dd>`);
             } 
         }
     });
