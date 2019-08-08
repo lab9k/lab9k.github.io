@@ -139,12 +139,6 @@ title: Lab9K
     });
     feed.run();
 	
-    $.getJSON("https://api.github.com/orgs/lab9k/members", function (result) {
-        for (let obj of result) {
-            $(".memberwrapper").append("<div><a href=\"{$}\" target=\"_blank\"><img src=\"{$}\" title=\"{$}\"></a></div>".format(obj["html_url"], obj["avatar_url"], obj["login"].capitalize()))
-        }
-    });
-	
     $.getJSON("https://api.github.com/orgs/lab9k/repos", function (result) {
         for (let obj of result) {
             if (obj["homepage"] !== null && obj["homepage"] !== "") {
