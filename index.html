@@ -150,11 +150,8 @@ title: Lab9K
 		var obj;
 		for (i = 0; i < 10; i++) {
 			obj = result[i];
-			$("#projectlist").append(`<dt class=\"project-name\"><a href=\"${obj["html_url"]}\">${obj["name"]}</a></dt><dd class=\"project-description\">${obj["description"]}</dd>`);
+			$("#projectlist").append(`<dt class=\"project-name\"><a href=\"${obj["html_url"]}\">${obj["name"]}</a></dt>${obj["description"]!==null?`<dd class=\"project-description\">${obj["description"]}</dd>`:''}`);
 		}
-        /*for (let obj of result) {
-                $("#projectlist").append(`<dt class=\"project-name\"><a href=\"${obj["html_url"]}\">${obj["name"]}</a></dt><dd class=\"project-description\">${obj["description"]}</dd>`); 
-        }*/
     });
 
     // custom method added to string
